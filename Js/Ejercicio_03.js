@@ -112,3 +112,46 @@ console.log(`El cliente ha agregado a su carrito de compreas ${Pedido_Cantidad} 
 if (Costo_Compra<Cliente_SaldoActual)
     console.log("El cliente tiene saldo insuficiente")
 
+//Actualizar el valor de los objetos
+console.log("%c4.- Actualización de los valores de las pro´piedades de un objetos", style_console);
+
+console.log(`El objeto actualmente tiene las siguemntes valores ${Producto2}`)
+console.log(JSON.stringify(Producto2, null, 2))
+
+console.log(`Por cuestiones de inflación el costo del producto ha cambiado y debe ser actualizado... de $6829.25 a $6900.30`)
+
+//Par modificar el valor de un objeto hasta con igualar el nuevo valor de la proepiedad deseada
+Producto2.Precio=6900.30;
+console.log(`Los nuevos valores del Producto son:`)
+console.log( Producto2)
+
+//¿Puede cambiar no solo el valor, sino el tipo de dato de un Objeto en JavaScript
+console.log(`----------------------------------------------------------------------------`)
+console.log(`El objeto actualmente tiene los siguentes valores`)
+let tipoDisponibilidad = typeof(Producto.Disponibilidad)
+console.log(`El tipo de dato de la disponibilidad es: ${tipoDisponibilidad}`)
+console.log(JSON.stringify(Producto2, null, 2)); //Disponibilidad booleano
+Producto2.Disponibilidad="Si";
+let nuevoTipoDisponibilidad=typeof(Producto2.Disponibilidad)
+console.log(Producto2);
+console.log(`El nuevo tipo de dato de la disponibilidad es: ${nuevoTipoDisponibilidad}`)
+
+//Agregar nuevas propiedades al obejto
+console.log("%c5.- Agregar nuevas propiedades al objeto", style_console);
+// Para agregar una nueva propiedad utiloizaremos el nombre del objeto lod corchetes [] y el nuevo de la propiedad con su valor por defecto
+console.log("Los datos actuales del comprador son: ")
+console.table(Comprador)
+Comprador['Direccion']="Av. Benito Juárez No. 1252, Interios 4D, Xicotepec de Juárez Puebla, Mexico"
+Comprador['Tipo']="Nuevo Cliente"
+Comprador['ActividadReciente']=true
+Comprador['TotalCompras']=3516.25
+console.log("Despues de haber agregado las propiedades Dirección, Tipo, ActividadReciente  y TotalCompras.....")
+console.table(Comprador)
+
+//Eliminar propiedades exitentes de un objeto
+console.log("%c6.- Eliminar propiedades axistentes de un objeto", style_console);
+console.log("La estructur y los valores del objeto PEDIDO son previos a la modificación: ")
+console.table(Pedido)
+delete Pedido.TipoPago
+console.log("")
+
