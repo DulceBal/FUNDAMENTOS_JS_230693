@@ -9,7 +9,8 @@ previa a iniciar el desarrollo de software para web utilizando el framework de M
 | No.|Descripcion|Estatus|
 |-- |--|--|
 |1.|Metodologia de Evaluacion| ✅Finalizada|
-|2.|Inicializacion del Proyecto de Fundamentos de JS [8 Firmas]| ✅Finalizada|
+|2.|Inicializacion del Proyecto de Fundamentos de JS [8 ]| ✅Finalizada|
+|3.|Ejercicio 01:Declaracion de variables JS [11 ]|✅Finalizada|
 
 ### Autor
 Dulce Balderas Gomez <br>
