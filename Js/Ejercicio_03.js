@@ -71,7 +71,7 @@ console.log("%c3.- Destructuración de Objetos", style_console);
 let  Producto2=
 {
     ID: 30525,
-    Clave:316,
+    //Clave:316,
     Nombre: "Tenis deportivLentes para sol",
     Marca: "Oakley",
     Modelo:"QNTM Kato",
@@ -85,7 +85,7 @@ let  Producto2=
 }
 let Comprador=
 {
-    Clave:3216,
+    ID:3216,
     Nombre: "Dulce",
     Apellidos: "Balderas Gomez",
     Tipo:"Frecuente",
@@ -96,7 +96,7 @@ let Comprador=
 let Pedido=
 {
     ID: 305,
-    Procuto_Clave:316,
+    Producto_Clave:316,
     Comprador_Clave: 3216,
     Cantidad: 2,
     Estatus:"Carrito de compra",
@@ -247,7 +247,7 @@ else
 
  const Venta2=
  {
-    producto: {...Producto},
+    producto: {...Producto2},
     comprador: {...Comprador},
     pedido: {...Pedido},
  }
@@ -272,6 +272,6 @@ else
  //Modificamos la estructura de producto, agregando una nueva propiedad
  Producto['isLegacy']=false;
  console.log(Producto)
- console.log(Venta2);
+ console.table(Venta2);
 
 
