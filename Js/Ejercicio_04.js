@@ -25,7 +25,7 @@ console.table(mesesAnio);
 console.log("%c2.- Leer o recuperar los datos de un arreglo", style_console);
 
 console.log(`El primer mes del año es: ${mesesAnio[0]} `)
-console.log(`El ultimo mes del año es: ${mesesAnio[mesesAnio,length-1]}`)
+console.log(`El ultimo mes del año es: ${mesesAnio[mesesAnio.length-1]}`)
 
 //No se pueden acceder a elementos con posiciones negativas o posiciones superiores al tamaño denido.
 
