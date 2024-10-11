@@ -13,7 +13,7 @@ Previo a iniciar el desarrollo de software para web usando el framework de NodeJ
 |3.|Ejercicio 01:Declaracion de variables JS [10 ]|✅Finalizada|
 |4.|Ejercicio 02:Tipos de datos en JS [6 ]|✅Finalizada|
 |5.|Ejercicio 03:Repaso de Objetos en JS [19 ]|✅Finalizada|
-|6.|Ejercicio 03:Repaso de Arreglos en JS [18 ]|⭐Activada|
+|6.|Ejercicio 03:Repaso de Arreglos en JS [18 ]|✅Finalizada|
 
 ### Autor
 Dulce Balderas Gomez <br>
