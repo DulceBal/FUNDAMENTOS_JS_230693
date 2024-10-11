@@ -136,3 +136,146 @@ switch(true)
 }
 
 console.log(`Dado que nació en el año 2000 es de la generaciòn : ${asignaGeneracion(1950)}`);
+
+console.log("%c4.- Manejo de Excepciones (TRY / CATCH)",  style_console);
+//En algunas ocaciones existiran errores que no son culpa del programa, si no del usuario, la red, el solo incluso de un MIDDLEWARE, pero que sin duda demenos controlar para evitar las fallas de ejecución-
+
+console.log("Lo intentamos dividir: 0/10, el resultado es:")
+
+// El try no interrumpe la ejecuciòn del programa, pero no puede eliminarse el catch
+
+
+try{ //intenta
+    let result = 0/10;  //dividir un entero entre 0
+    console.log(result)
+}
+catch(error)
+{
+    console.log("Ocurrio un error: "+error.message);
+}
+
+console.log("Lo intentamos dividir: 10/0, el resultado es:")
+
+try{ //intenta
+    let result = 10/0;  //dividir 0 entre un entero
+    console.log(result)
+}
+catch(error)
+{
+    console.log("Ocurrio un error: "+error.message);
+}
+
+console.log("Lo intentamos dividir: a/10, el resultado es:")
+
+try{ //intenta
+    let result = "a"/0;  //dividir una letra entre 0
+    console.log(result)
+}
+catch(error)
+{
+    console.log("Ocurrio un error: "+error.message);
+}
+
+console.log("Lo intentamos dividir: la variable a/10, el resultado es:")
+
+try{ //intenta
+    let result = a/0;  //dividir una variable entre 0
+    console.log(result)
+}
+catch(error)
+{
+    console.log("Ocurrio un error: "+error.message);
+}
+
+console.log("Lo intentamos dividir: el valor de la variable x/ entre el valor de la variable y, el resultado es:")
+
+try{ //intenta
+    let x=8, y=2,result = x/y;  //dividir una variable entre otra variable
+    console.log(result)
+}
+catch(error)
+{
+    console.log("Ocurrio un error: "+error.message);
+}
+
+console.log("%c5.- Control de Ciclos (BREAK / CONTINUE)",  style_console);
+
+//En algunas ocaciones será importante detener un ciclo de manera abrupta para controlar casos especiales en un ciclo..
+
+console.log("Vamos a contar del 1 al 10...")
+for(let num = 1; num <= 10; num++)
+    console.log(num);
+
+console.log("Ahora necesitamos que si llegas a 7 pares de contar... suponiendo que solo por hoy es de mala suerte....")
+for(num = 1; num <= 10; num++)
+    if(num==7)
+        break; //Deja de hacer lo que esta haciendo y para todo
+    else
+    console.log(num);
+
+    console.log("Ahora necesitamos que si llegas a 7 te saltes ese numero y continues....")
+    for(num = 1; num <= 10; num++){
+        if(num==7){
+            continue;}
+        console.log(num);
+}
+
+console.log("%c6.- Ciclo Interactivo - (FOR)",  style_console);
+
+//Recorre de manera interativa (i), de incremental a decremental
+
+console.log("Los días de la semana en orden asecendente son: ")
+let dias = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
+
+for(let i=0; i<dias.length; i++)
+    console.log(dias[i])
+
+console.log("Ahora vamos a imprimir los meses en orden descendente...")
+const  meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
+for(let i=11; i>=0; i--)
+    console.log(meses[i])
+
+console.log("%c7.- Ciclo Condicionales - (WHILE)",  style_console);
+//Estos ciclos (BUCKLE) dependen de una condiciòn para continuar ejecutandose.
+
+let finDeSemana = false;
+let mess = "";
+let j = 0;
+while (j<dias.length) {
+    switch ( j ) {
+        case 0:
+            finDeSemana = true;
+            mess = "Domingo de feminismo"
+            break;
+        case 1:
+            finDeSemana = false;
+            mess = "Lunes de esquizofrenia"
+            break;
+        case 2:
+            finDeSemana = false;
+            mess = "Martes de xenofobia"
+            break;
+        case 3:
+            finDeSemana = false;
+            mess = "Miercoles de machismo"
+            break;
+        case 4:
+            finDeSemana = false;
+            mess = "Jueves de racismo"
+            break;
+        case 5:
+            finDeSemana = false;
+            mess = "Viernes de homofobia"
+            break;
+        case 6:
+            finDeSemana = true;
+            mess = "Sábado de clasismo"
+            break;
+    }
+if(!finDeSemana){
+    console.log(`Día ${j+1}`);
+    console.log(`Mensaje del día:  ${mess}`);
+}
+  
+    j++;
+}
