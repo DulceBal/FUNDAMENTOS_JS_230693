@@ -99,7 +99,7 @@ console.log(`Elementos en la posición [1][2] (¿Es Maria mayor?): ${matrizIrreg
 console.log(`Elementos en la posición [2][0] (Promedio de Juan): ${matrizIrregular[2][0]}`)
 
 //Funciones y métodos de Arreglos
-//los metodos de ubn objeto siempre son invocados usando un . y su termino se delimitan los parametros entre(), en caso de que no lleve(), no es un metodo, sino una propiedad.
+//los metodos de un objeto siempre son invocados usando un . y su termino se delimitan los parametros entre(), en caso de que no lleve(), no es un metodo, sino una propiedad.
 
 //
 console.log("%c4.- Funciones o Métodos de los Arreglos (Array Methos or Array functions)", style_console)
@@ -133,14 +133,14 @@ console.table(estudiantes)
 console.log("¿Qué pasa con los Mixtos?")
 console.log("El arreglo Mixto actualmente tiene los siguientes elementos")
 console.table(arregloMixto)
-console.log("Agregamos la papñabra \"Hola\, como nuevo elemnto")
+console.log("Agregamos la palabra \"Hola\, como nuevo elemento")
 arregloMixto.push("Hola")
 console.log("Y tambien agregamos el numero -325125542554555.55856552 siendo este un BigInt")
 arregloMixto.push(-325125542554555.55856552)
 console.log("Despues de esstas dos operaciones el arreglo queda con los siguentes elementos")
 console.table(arregloMixto)
 
-console.log("%c6.- Agregamos un nuevo elemnto a un arreglo (UNSSHIFT) en la posiscoón inicaial", style_console);
+console.log("%c6.- Agregamos un nuevo elemento a un arreglo (UNSSHIFT) en la posiscoón inicaial", style_console);
 console.table(estudiantes)
 console.log("Ahora agregamos a Abishai Flores, al comienzo del arreglo")
 estudiantes.unshift("Abisahi Flores")
@@ -151,7 +151,7 @@ console.table(estudiantes)
 console.log("%c7.- Eliminar elementos de un arreglo en la ultima posición (POP)", style_console);
 console.log("El arreglo tiene los siguentes elementos")
 console.table(estudiantes)
-console.log("Para este caso eliminaremos a Abri, el la última posición")
+console.log("Para este caso eliminaremos a Abril, el la última posición")
 estudiantes.pop();
 console.log("Después de eliminar el elemento el arreglo quedo de la siguiente manera")
 console.table(estudiantes)
@@ -261,7 +261,7 @@ console.table(signosZodiacales.map(signoZodiacal => signoZodiacal.toUpperCase())
 //Reducción de elemntos de un arreglo, se usa cuando debemos hacer operaciones matematicas o  cuantitativas a un arreglo, como obtener totales, la idea es reducir la lista a un valor más simplificado;
 const costosListaCompras = [15,52,50,16,90,32,50,28,105,45,2,94,10];
 
- //Cómo podemos clcular el total de una lista de costos de un carrito de compras
+ //Cómo podemos calcular el total de una lista de costos de un carrito de compras
  console.log("Los precios son: ")
 console.table(costosListaCompras)
 console.log(`El total de la compra es: ${costosListaCompras.reduce((total, precio) => total+precio,0).toFixed(2)}`);
